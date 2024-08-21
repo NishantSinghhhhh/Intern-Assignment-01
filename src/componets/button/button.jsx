@@ -1,18 +1,19 @@
-import React from 'react'
-import { HiMiniHome } from "react-icons/hi2";
-import styles from './button.module.css'
-const button = () => {
+import React from 'react';
+import styles from './button.module.css';
+
+const Button = ({ icon: Icon, text }) => {
   return (
     <div className={styles.main}>
-        <div className={styles.icon}>
-        <HiMiniHome />
-        </div>
-        ?hii
-        <div className={styles.text}>
-            Dashboard
-        </div>
+      <div className={styles.icon1}>
+      <div className={styles.icon}>
+        {Icon && <Icon />} {/* Render the icon if provided */}
+      </div>
+      </div>
+      <div className={styles.text}>
+        {text} {/* Render the text */}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default button
+export default Button;

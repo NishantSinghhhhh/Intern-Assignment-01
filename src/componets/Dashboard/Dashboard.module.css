@@ -1,3 +1,4 @@
+/* Root CSS variables (you can keep this as is) */
 :root {
     --bs-blue: #63b3ed;
     --bs-indigo: #596cff;
@@ -64,21 +65,85 @@
     --bs-highlight-bg: #fcf8e3;
 }
 
-.dash{
-    padding: 1.8rem;
-    padding-right: 1.5rem;
+/* Dashboard Container */
+.dash {
+    background-color: #F8F9FA;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ensure the height is full viewport height */
+    overflow-y: auto; /* Make sure vertical scrolling is enabled */
 }
-.upper{
+
+/* Upper Section */
+.upper {
     width: 100%;
     height: 14%;
-    /* background-color: blue; */
     display: flex;
     align-items: center;
     gap: 1rem;
-    border-bottom: 1px solid #dee2e6 ;
+    padding: 24px 32px;
+    font-size: 14px;
+    border-bottom: 1px solid #dee2e6;
 }
 
-.logo{
+.menu {
+    margin-top: 10%;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.logo {
     width: 2rem;
     height: 2rem;
+}
+
+.heading1 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #828FA2;
+    display: flex;
+    height: 20%;
+    align-items: center;
+    margin-bottom: 1.8rem;
+    padding-left: 1rem;
+}
+
+.menu2 {
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.Account {
+    height: 33%;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.upgrade {
+    width: 100%;
+    height: 25vh;
+    background-color: #20c997;
+    border-radius: 20px;
+    /* background-image: url(url(../../assets/top-icon.webp)); */
+}
+
+.image{
+    border-radius: 20px;
+    z-index: -1;
+}
+.icon2{
+/* color: white; */
+height: 20px;
+width: 20px;
+/* position: absolut; */
+
+
 }
